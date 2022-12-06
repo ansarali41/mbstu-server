@@ -40,7 +40,7 @@ router.post("/add", async (req, res) => {
 
 
 // GET ALL THE TODOS
-router.get("/all-news", (req, res) => {
+router.get("/all-notice", (req, res) => {
   Notice.find({})
     // .populate("user", "name username -_id")
     // .select({

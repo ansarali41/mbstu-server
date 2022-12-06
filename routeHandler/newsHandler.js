@@ -5,11 +5,10 @@ const todoSchema = require("../schemas/todoSchema");
 const userSchema = require("../schemas/userSchema");
 const News = new mongoose.model("News", todoSchema);
 const User = new mongoose.model("User", userSchema);
-const fs = require("fs");
 const checkLogin = require("../middlewares/checkLogin");
 
 // POST A NEWS
-router.post("/add", async (req, res) => {
+router.post("/add",async (req, res) => {
 
   // user: req.userId
 
